@@ -1,8 +1,36 @@
-body {background-color: teal;}
-body{ color: white; }
-h1{ font-family:Arial;; font-size: 22px}
-.program{background-color:red;;text-align:center}
-.minatankar{text-align :Right;}
-a{text-decoration:none;}
-.migsjalv{border-style: solid;}
+.wrapper {
+    display: grid
+    grid-template-areas:"header"
+        "main"   
+} 
+main{
+    grid-area:main;
+    display:grid;
+    grid-template-rows:50% 50%;
+    grid-template-areas: "s1 s2"
+                         "s1 s2";
+    grid-template-columns:50% 50%;
+}
+header{grid-area:header;
+    background-color:#484848;
+    color:red;
+    display:grid;
+    grid-template-rows:auto ;
+}
+section{font-size:25px;
+}
+section:nth-child(1){
+    grid-area:s1;
+    background-color: tomato;
 
+}
+section:nth-child(2){
+    grid-area:s2;
+    background-color:blue;
+}
+img{float:right;
+}
+a{color:darkred;
+}
+.namn{text-align:center;}
+     
